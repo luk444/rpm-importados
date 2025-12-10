@@ -409,7 +409,7 @@ export default function CheckoutModal({ cartItems, onClose, onSuccess }) {
                 <Button
                   onClick={onClose}
                   variant="outline"
-                  className="flex-1 h-12 border-gray-300 hover:bg-gray-50"
+                  className="flex-1 h-12 border-white/30 text-white hover:bg-white/10 hover:text-white"
                 >
                   Cancelar Pedido
                 </Button>
