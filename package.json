@@ -1,0 +1,43 @@
+{
+  "name": "app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "firebase": "firebase",
+    "deploy": "npm run build && firebase deploy --only hosting",
+    "firestore": "firebase deploy --only firestore:rules",
+    "indexes": "firebase deploy --only firestore:indexes",
+    "setup-firebase": "firebase deploy --only firestore",
+    "reset-payments": "node reset-payments.js",
+    "init-shipping": "node init-shipping.js"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.90.12",
+    "firebase": "^12.6.0",
+    "framer-motion": "^12.23.26",
+    "lucide-react": "^0.559.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-router-dom": "^7.10.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@types/react": "^19.2.5",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.1",
+    "autoprefixer": "^10.4.22",
+    "eslint": "^9.39.1",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "firebase-tools": "^14.27.0",
+    "globals": "^16.5.0",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.18",
+    "vite": "^7.2.4"
+  }
+}
